@@ -1,0 +1,30 @@
+<ruleset name="Bridgeman Images">
+	<description>PSR2 standard with tabs indentation instead of spaces</description>
+
+	<!--<rule ref="Generic.Commenting.Todo"/>
+	<rule ref="Generic.PHP.DisallowShortOpenTag"/>
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+	<rule ref="Generic.Files.LineEndings">
+		<properties>
+			<property name="eolChar" value="\n"/>
+		</properties>
+	</rule>
+
+	<rule ref="Squiz.Operators.ValidLogicalOperators"/>-->
+
+	<rule ref="PSR2">
+		<exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature"/>
+		<exclude name="Zend.NamingConventions.ValidVariableName.NotCamelCaps"/>
+	</rule>
+
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+
+	<rule ref="PEAR.WhiteSpace.ScopeClosingBrace">
+		<properties>
+			<!-- Adapt indent to work with tabs -->
+			<property name="indent" value="1"/>
+		</properties>
+	</rule>
+
+</ruleset>
